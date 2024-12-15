@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // Визначає версію ECMAScript, яку компілює TypeScript
+    "module": "CommonJS",                     // Використовуємо CommonJS для сумісності з Node.js
+    "moduleResolution": "node",               // Підтримка резолюції модулів як у Node.js
+    "esModuleInterop": true,                  // Дозволяє імпортувати CommonJS модулі з використанням `import`
+    "skipLibCheck": true,                     // Пропускає перевірку типів у файлах бібліотек
+    "forceConsistentCasingInFileNames": true, // Забороняє використовувати різні регістри в іменах файлів
+    "outDir": "./dist",                       // Виводить компільовані файли у папку dist
+    "rootDir": "./src",                       // Вказує директорію з оригінальними TypeScript файлами
+    "strict": true,                           // Включає сувору перевірку типів
+    "resolveJsonModule": true,                // Дозволяє імпортувати JSON файли
+    "allowJs": true                           // Дозволяє використовувати JS файли разом з TS
+  },
+  "include": [
+    "src/**/*.ts"                             // Включає всі TypeScript файли в папці src
+  ],
+  "exclude": [
+    "node_modules"                            // Виводить node_modules з компіляції
+  ]
+}
